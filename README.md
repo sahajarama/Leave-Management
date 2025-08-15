@@ -1,23 +1,9 @@
 Leave Management System
-
-This is a console-based Leave Management System developed in Java. It provides a simple, command-line interface for employees to manage their leave applications and for administrators to oversee the process. The system connects to a MySQL database to store and retrieve all leave-related data.
+This project is a simple, web-based Leave Management System built using a native Java HTTP server. It provides a basic interface for employees to log in, submit leave requests, and for a manager to view all submitted requests. The system is designed to be a lightweight, self-contained application without external frameworks.
 
 Features
-User Authentication: Supports separate login credentials for employees and administrators.
+Login Page: A basic HTML form for employees to log in with their name and employee ID.
+Leave Request Form: A form for employees to submit a reason for their leave.
+View Requests Page: A table-based page that displays all submitted leave requests.
 
-Employee Functionality:
-Apply for different types of leave (Sick, Casual, Earned).
-View personal leave history and current leave balances.
-
-Administrator Functionality:
-Approve or reject leave applications.
-View all submitted leave requests.
-Filter and view only pending leave requests.
-Database Integration: Uses a MySQL database to maintain a persistent record of employees, their leave balances, and all leave applications.
-
-Prerequisites
-To run this application, you will need to have the following installed:
-Java Development Kit (JDK): Version 8 or higher.
-MySQL Database: A running instance of a MySQL server.
-
-MySQL Connector/J: The JDBC driver for Java. You can download it from the official MySQL website or add it to your project's dependencies if you are using a build tool like Maven or Gradle.
+In-Memory Storage: The application uses a simple ArrayList to store leave requests, meaning the data is temporary and will be lost when the server is stopped.
